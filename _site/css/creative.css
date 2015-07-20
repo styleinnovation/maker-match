@@ -406,14 +406,13 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
-    border-color: rgba(204,0,0,.7);
-    color: #fff;
-    background-color: #f05f40;
-    background-color: rgba(204,0,0,.7);
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+    color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    outline: 4px solid rgba(255,255,255,.7);
+    border: none;
 }
 
 .btn-primary:hover,
@@ -422,11 +421,10 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
-    border-color: rgba(204,0,0,1);
-    color: #fff;
-    background-color: #ee4b28;
-    background-color: rgba(204,0,0,1);
+    border: none;
+    outline: 4px solid rgba(255,255,255,.9);
+    background-color: rgba(255,255,255,.9);
+    color: rgba(6,60,99,1);
 }
 
 .btn-primary:active,
@@ -453,10 +451,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
-    border-color: rgba(204,0,0,1);
-    background-color: rgba(204,0,0,1);
+    border-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0);
 }
 
 .btn-primary .badge {
@@ -465,7 +461,6 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn {
-    border: 0;
     border-radius: 0;
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
