@@ -133,6 +133,12 @@ span.span-red-bold {
     padding: 6px;
 }
 
+.container-grey {
+    background: #eee;
+    padding: 60px 20px;
+    color: rgba(0,0,0,.5);
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,0);
@@ -406,12 +412,12 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    color: rgba(255,255,255,.7);
+    color: rgba(255,255,255,1);
     background-color: rgba(255,255,255,0);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    outline: 4px solid rgba(255,255,255,.7);
+    outline: 3px solid rgba(255,255,255,1);
     border: none;
 }
 
@@ -422,9 +428,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
     border: none;
-    outline: 4px solid rgba(255,255,255,.9);
+    outline: 3px solid rgba(255,255,255,.9);
     background-color: rgba(255,255,255,.9);
-    color: rgba(6,60,99,1);
+    color: rgba(6,60,99,.7);
 }
 
 .btn-primary:active,
@@ -468,7 +474,10 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 15px 30px;
+    padding: 16px 50px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
 }
 
 ::-moz-selection {
