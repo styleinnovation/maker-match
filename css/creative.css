@@ -509,4 +509,5 @@ body {
 mark {
     background-color: black;
     color: white;
+    opacity: 0.5;
 }
