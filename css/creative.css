@@ -489,6 +489,7 @@ fieldset[disabled] .btn-primary.active {
     font-size: 40px;
     color: #fff;
     background: 0 0;
+    background: rgba(255,255,255,.6)
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -498,7 +499,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-circle:focus {
     outline: 0;
     color: #6CDFC8;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.8);
 }
 
 .btn-circle i.animated {
