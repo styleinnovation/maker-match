@@ -484,7 +484,7 @@ fieldset[disabled] .btn-primary.active {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #6CDFC8;
     border-radius: 100%!important;
     font-size: 40px;
     color: #fff;
@@ -497,8 +497,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
+    color: #6CDFC8;
+    background: rgba(255,255,255,.5);
 }
 
 .btn-circle i.animated {
