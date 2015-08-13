@@ -507,7 +507,7 @@ body {
 }
 
 mark {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     opacity: 0.25;
 }
