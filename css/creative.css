@@ -507,12 +507,6 @@ body {
 }
 
 mark {
-    background-color: white;
-    color: black;
-    opacity: 0.8;
-}
-
-mark2 {
     background-color: black;
     color: white;
     opacity: 0.8;
