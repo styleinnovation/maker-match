@@ -505,3 +505,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+mark {
+    background-color: black;
+    color: white;
+}
