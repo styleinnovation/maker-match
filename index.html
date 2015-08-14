@@ -90,7 +90,7 @@
                     <h2 class="section-heading">Meaningful and Lasting Jewelry!</h2>
                     <hr class="light">
                     <p class="text-faded">Everyday should be a WKND. Ladies night out, girls wknd, bachelorette parties...what happens on the wknd, stays on the wknd. You will inspire our jewelry artists to custom design something incredibly unique and personal based on your thoughtful answers to a few questions.</p>
-                    <a href="#" class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModal">Get Started!</a>
+                    <a href="#" class="btn btn-default btn-xl" id="get-started-btn" data-toggle="modal" data-target="#myModal">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -357,6 +357,7 @@
 
     <script type="text/javascript">
       $(document).ready(function() {
+        $("#get-started-btn").css("color", "rgba(108,223,200,1)");
         $("#apply-button").on('mouseenter', function(){
           $(this).css("background", "rgba(108,223,200,1)");
           $(this).css("color", "rgba(255,255,255,1)");
