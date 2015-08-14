@@ -53,7 +53,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#get-started">Get Started</a>
+                        <a class="page-scroll" href="#"  data-toggle="modal" data-target="#myModal">Get Started</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#how-it-works">How It Works</a>
@@ -90,7 +90,7 @@
                     <h2 class="section-heading">Meaningful and Lasting Jewelry!</h2>
                     <hr class="light">
                     <p class="text-faded">Everyday should be a WKND. Ladies night out, girls wknd, bachelorette parties...what happens on the wknd, stays on the wknd. You will inspire our jewelry artists to custom design something incredibly unique and personal based on your thoughtful answers to a few questions.</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <a href="#" class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModal">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -253,7 +253,7 @@
                     <p>Apply now if you love telling stories through your designs,<br>empathizing with your customers, and have unique style!</p><br>
                 </div>
                 <div class="col-sm-4 col-sm-offset-4">
-                    <a type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="apply-button">Apply!</a>
+                    <a type="button" class="btn btn-block btn-primary btn-lg" id="apply-button">Apply!</a>
                 </div>
             </div>
         </div>
@@ -267,17 +267,14 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel"></h4>
             </div>
             <div class="modal-body">
               <!-- Begin MailChimp Signup Form -->
               <div id="mc_embed_signup">
               <form action="//style.us11.list-manage.com/subscribe/post?u=c0a692613a725c2e3f819ef84&amp;id=306bac5291" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div id="mc_embed_signup_scroll">
-              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
               <div class="mc-field-group">
-              	<label for="mce-MMERGE3">Select Jewelry Style  <span class="asterisk">*</span>
+              	<label for="mce-MMERGE3">Select Jewelry Style
               </label>
               	<select name="MMERGE3" class="required" id="mce-MMERGE3">
               	<option value=""></option>
@@ -290,32 +287,32 @@
               	</select>
               </div>
               <div class="mc-field-group">
-              	<label for="mce-MMERGE4">Please describe your perfect wedding day!  <span class="asterisk">*</span>
+              	<label for="mce-MMERGE4">Please describe your perfect wedding day!
               </label>
               	<input type="text" value="" name="MMERGE4" class="required" id="mce-MMERGE4">
               </div>
               <div class="mc-field-group">
-              	<label for="mce-MMERGE8">Please describe your perfect bachelorette party!  <span class="asterisk">*</span>
+              	<label for="mce-MMERGE8">Please describe your perfect bachelorette party!
               </label>
               	<input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
               </div>
               <div class="mc-field-group">
-              	<label for="mce-MMERGE5">Why are these ____ important to you?  <span class="asterisk">*</span>
+              	<label for="mce-MMERGE5">Why are these ____ important to you?
               </label>
               	<input type="text" value="" name="MMERGE5" class="required" id="mce-MMERGE5">
               </div>
               <div class="mc-field-group">
-              	<label for="mce-MMERGE6">What memories do you hope to make with these ____?  <span class="asterisk">*</span>
+              	<label for="mce-MMERGE6">What memories do you hope to make with these ____?
               </label>
               	<input type="text" value="" name="MMERGE6" class="required" id="mce-MMERGE6">
               </div>
               <div class="mc-field-group">
-              	<label for="mce-MMERGE7">How will these ____ make your wedding better?  <span class="asterisk">*</span>
+              	<label for="mce-MMERGE7">How will these ____ make your wedding better?
               </label>
               	<input type="text" value="" name="MMERGE7" class="required" id="mce-MMERGE7">
               </div>
               <div class="mc-field-group">
-              	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+              	<label for="mce-EMAIL">Email Address
               </label>
               	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
               </div>
@@ -330,11 +327,11 @@
               </div>
               <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[3]='MMERGE3';ftypes[3]='dropdown';fnames[4]='MMERGE4';ftypes[4]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[5]='MMERGE5';ftypes[5]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
               <!--End mc_embed_signup-->
+
             </div>
-            <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            <!-- <div class="modal-footer">
               <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -363,11 +360,48 @@
         $("#apply-button").on('mouseenter', function(){
           $(this).css("background", "rgba(108,223,200,1)");
           $(this).css("color", "rgba(255,255,255,1)");
-        })
+        });
         $("#apply-button").on('mouseout', function(){
           $(this).css("background", "rgba(108,223,200,.0)");
           $(this).css("color", "rgba(108,223,200,1)");
-        })
+        });
+
+        var formSubmit = $("#mc-embedded-subscribe");
+        formSubmit.removeClass("button");
+        formSubmit.addClass("btn btn-primary btn-lg btn-block");
+        formSubmit.attr("Value", "submit");
+        formSubmit.css("margin-top", "30px");
+
+
+        var select = $("select");
+        select.addClass("input-lg form-control");
+
+        var label = $("label");
+        label.addClass("label-control");
+        label.css("font-weight", "100");
+        label.css("margin-top", "20px");
+        label.css("font-size", "16px");
+
+
+        var input = $("input");
+        input.addClass("input-lg form-control");
+        input.css("height", "80px");
+
+        var inputGroup = $("input").parent();
+        inputGroup.addClass("form-group");
+        inputGroup.removeClass("mc-field-group");
+
+        var form = $("form").parent().parent().parent();
+        form.css("padding", "50px");
+        // form.css("background", "rgba(108,223,200,.7)");
+        form.css("background", "rgba(0,0,0,.7)");
+        form.css("color", "rgba(255,255,255,1)");
+
+
+        formSubmit.css("height", "50px");
+
+        var email = $("#mce-EMAIL");
+        email.css("height", "50px");
       });
     </script>
 
