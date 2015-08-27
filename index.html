@@ -464,6 +464,24 @@ mixpanel.track("WKND Page Loaded");
 
         var email = $("#mce-EMAIL");
         email.css("height", "50px");
+        
+         mixpanel.track_links("#how-it-works", "Click - How it works nav", {
+            "referrer": document.referrer
+        });
+         mixpanel.track_links("#get-started-nav", "Click - Get Started nav", {
+            "referrer": document.referrer
+        });
+        mixpanel.track_links("#get-started-header-button", "Click - Get Started Header Button", {
+            "referrer": document.referrer
+        });
+        mixpanel.track_links("#email-us", "Click - Email us", {
+            "referrer": document.referrer
+        });
+        
+        $("#mc-embedded-subscribe-form input").on("focus", function(){
+            mixpanel.track($(this).attr("id") + " input was started");
+        });
+        mixpanel.track_forms("#mc-embedded-subscribe-form", "Submitted Form to Mail Chimp");
       });
     </script>
 
